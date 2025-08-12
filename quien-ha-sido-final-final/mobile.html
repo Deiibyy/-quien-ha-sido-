@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>¿Quién ha sido? - Móvil</title>
+<link rel="stylesheet" href="mobile.css"></head>
+<body>
+  <h2>Únete a la sala</h2>
+  <input id="room" placeholder="Código de sala"/><br/>
+  <input id="name" placeholder="Tu nombre"/><br/>
+  <button id="join">Unirse</button>
+  <div id="photoArea" style="display:none">
+    <input type="file" id="photo" accept="image/*"/><br/>
+    <img id="preview" style="max-width:120px; display:none"/>
+  </div>
+  <div id="voteArea" style="display:none">
+    <p>Vota:</p>
+    <div id="options"></div>
+  </div>
+<script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+<script src="mobile.js"></script>
+</body></html>
